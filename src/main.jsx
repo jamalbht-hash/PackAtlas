@@ -12,7 +12,7 @@ const products = [
 function App() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [quantities, setQuantities] = useState({ 1: 10, 2: 10, 3: 5 });
-  const phone = '212600000000'; // Remplacez par votre numéro WhatsApp, sans + ni espaces.
+  const phone = '+212770142096'; // Remplacez par votre numéro WhatsApp, sans + ni espaces.
   const order = (product) => {
     const qty = Math.max(1, Number(quantities[product.id]) || 1);
     const message = `Salam, bghit nطلب ${qty} carton(s) ${product.name} (${product.size}). Le prix affiché est ${product.price.toFixed(2)} DH/unité. Merci de confirmer disponibilité et livraison à Marrakech.`;

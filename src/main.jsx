@@ -16,7 +16,7 @@ function App() {
   const order = (product) => {
     const qty = Math.max(1, Number(quantities[product.id]) || 1);
     const message = `Salam, bghit nطلب ${qty} carton(s) ${product.name} (${product.size}). Le prix affiché est ${product.price.toFixed(2)} DH/unité. Merci de confirmer disponibilité et livraison à Marrakech.`;
-    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+    window.open(`https://wa.me/${+212770142096}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
   };
   const orderAll = () => {
     const lines = products.filter(p => Number(quantities[p.id]) > 0).map(p => `${quantities[p.id]} x ${p.name}`);
